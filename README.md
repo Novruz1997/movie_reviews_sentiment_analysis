@@ -39,7 +39,7 @@ sia.polarity_scores('NTLK is one of the most popular NLP library with too many f
 ```
 
 
-![most common 100 negative words is shown](https://github.com/Novruz1997/movie_reviews_sentiment_analysis/blob/main/image.jpg?raw=true)
+![most common 100 negative words is shown](https://github.com/Novruz1997/movie_reviews_sentiment_analysis/blob/main/pics/Screen%20Shot%202021-06-12%20at%205.12.30%20PM.png)
 
 
 ## License
