@@ -6,6 +6,13 @@ NLTK is used for text preprocessing and feature engineering. Sklearn is used as 
 
 For Feature Generation, NLTK already has a built-in, pretrained sentiment analyzer called [VADER](http://www.nltk.org/howto/sentiment.html) (Valence Aware Dictionary and sEntiment Reasoner).
 
+##Installation
+
+```python
+
+!pip install nltk
+```
+
 ## USAGE
 
 ```python
@@ -17,7 +24,7 @@ sia.polarity_scores('NTLK is one of the most popular NLP library with too many f
 ```
 
 
-**Plotting top 100 positive and negative words in corpus**
+**Plotting either top 100 positive or negative words in corpus**
 
 ```python
   def plot_top_100(self, category):
@@ -37,7 +44,9 @@ sia.polarity_scores('NTLK is one of the most popular NLP library with too many f
     except ValueError:
       print('category mush be either positive of negative')
 ```
-
+```python
+TextPrerocessor(nltk.corpus.movie_reviews.words()).plot_top_100('negative')
+```
 
 ![most common 100 negative words is shown](https://github.com/Novruz1997/movie_reviews_sentiment_analysis/blob/main/pics/Screen%20Shot%202021-06-12%20at%205.12.30%20PM.png)
 
