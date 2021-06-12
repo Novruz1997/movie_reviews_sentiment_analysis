@@ -16,6 +16,9 @@ sia  = SentimentAnalyzer()
 sia.polarity_scores('NTLK is one of the most popular NLP library with too many features')  # returns positive %, negative %, compound %
 ```
 
+
+**Plotting top 100 positive and negative words in corpus**
+
 ```python
   def plot_top_100(self, category):
     '''plotting top 100 words either positive or negative'''
@@ -36,7 +39,7 @@ sia.polarity_scores('NTLK is one of the most popular NLP library with too many f
 ```
 
 
-![most common 100 negative words is shown](https://github.com/[Novruz1997]/[movie_reviews_sentiment_analysis]/blob/[main]/image.jpg?raw=true)
+![most common 100 negative words is shown](https://github.com/Novruz1997/movie_reviews_sentiment_analysis/blob/main/image.jpg?raw=true)
 
 
 ## License
