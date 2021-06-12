@@ -14,6 +14,30 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 sia  = SentimentAnalyzer()
 
 sia.polarity_scores('NTLK is one of the most popular NLP library with too many features')  # returns positive %, negative %, compound %
+```
+
+```python
+  def plot_top_100(self, category):
+    '''plotting top 100 words either positive or negative'''
+    try:
+      if category in ['positive', 'negative']:
+        if category == 'positive':
+          x = WordCloud().generate(' '.join(list(self.top_100_positive)))
+          plt.imshow(x, interpolation='bilinear')
+          plt.axis('off')
+          plt.show()
+        else:
+          x = WordCloud().generate(' '.join(list(self.top_100_negative)))
+          plt.imshow(x, interpolation='bilinear')
+          plt.axis('off')
+          plt.show()
+    except ValueError:
+      print('category mush be either positive of negative')
+```
+
+
+![most common 100 negative words is shown](https://github.com/[Novruz1997]/[movie_reviews_sentiment_analysis]/blob/[main]/image.jpg?raw=true)
+
 
 ## License
 
