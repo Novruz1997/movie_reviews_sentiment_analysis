@@ -167,15 +167,12 @@ classifiers = {
 
 
 
-for name, classifier in classifiers.items():
-  cls = Classification(classifier)
-  test_data, train_data = cls.train_test_split(features)
-  pred = cls.train_classifier(train_data, method = 'sklearn')
-  accuracy = nltk.classify.accuracy(pred, test_data)
-  print('Accuracy for {0} classifier is {1}'.format(name, round(accuracy, 2)))
 
-xx = TextPreprocessor(nltk.corpus.movie_reviews.words())
-xx.plot_top_100('positive')
-
-xx.plot_top_100('negative')
+if __name__ == '__main__':
+  for name, classifier in classifiers.items():
+    cls = Classification(classifier)
+    test_data, train_data = cls.train_test_split(features)
+    pred = cls.train_classifier(train_data, method = 'sklearn')
+    accuracy = nltk.classify.accuracy(pred, test_data)
+    print('Accuracy for {0} classifier is {1}'.format(name, round(accuracy, 2)))
 
